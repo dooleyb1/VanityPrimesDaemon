@@ -16,15 +16,23 @@ To begin with, clone the repo.
 git clone https://github.com/dooleyb1/VanityPrimesDaemon
 ```
 
-Explode the mbedtls tarball.
+Explode the mbedtls & civetweb tarballs.
 ```
-tar xzvf mbedtls-2.6.0-apache.tgz
+tar xzvf mbedtls-2.6.0-apache.tgz && tar xzvf civetweb-1.10.tar.gz 
 ```
 
 Build the mbedtls code.
 ```
 cd mbedtls-2.6.0
 make
+```
+
+Go back up a level and move into the civetweb-1.10 directory. Build and install the civetweb files.
+```
+cd..
+cd civetweb-1.10
+make
+sudo make install
 ```
 
 Go back up a level and compile the vanity_server program.
