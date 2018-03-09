@@ -42,7 +42,6 @@ Run example at http://localhost:8081/example
 Exit at http://localhost:8081/exit
 Generate vanity prime at http://localhost:8081/.well-known/vanityprime?vs=0x...
 Exit vanity prime at http://localhost:8081/vpexit
-
 ```
 
 ## Example Usage
@@ -60,7 +59,6 @@ Attempting to find vanity prime number...
 Vanity prime found = deadb33fAK@F81B28F06AC0161D27EF6E60949BEF4AF2B47B7C8A928FF4B410FC5A6202D897AF70BD4660D1C37897BD9DF849DCB474EAD21923C9AC72E676580F060D87D12315C4F209048E3F02F32D5C4E6DB3D17E06F8187CC96D50E7D210B91E00BAF38CC7E8111D388A474A73B089E7B7AF3BF0B0582ADCBA99D2E8AA255
 
 Attempts = 729
-
 ```
 
 When finished using the server make sure to exit and close the server by sending the HTTP request as follows:
@@ -68,7 +66,6 @@ When finished using the server make sure to exit and close the server by sending
 ```
 curl http://localhost:8081/vpexit
 Vanity prime exit command received!
-
 ```
 
 Sometimes the server is unable to generate a vanity prime number after a given number of attempts (1000). This will result in the following error code.
@@ -76,5 +73,4 @@ Sometimes the server is unable to generate a vanity prime number after a given n
 ```
 400 Bad Request
 Attempts to produce vanity string exceeded max attempts (1000)Attempts = 1000
-
 ```
